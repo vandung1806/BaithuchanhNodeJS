@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("head.ejs") %>
+</head>
+<body>
+    <%- include("nav.ejs") %>
+    <section>
+        <div class="container">
+            <h1>Home page</h1>
+            <h2>Demo</h2>
+            <p>XIn chao</p>
+            <h2>Danh sách sản phẩm:</h2>
+            <table class="table">
+                <thead>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th></th>
+                </thead>
+                <tbody>
+                    <% products.forEach(e=>{ %>
+                        <tr>
+                            <td><%= e._id %></td>
+                            <td><%= e.name %></td>
+                            <td><%= e.price %></td>
+                            <td><%= e.qty %></td>
+                            <td>
+                                <a href="#" class="btn btn-outline-primary">Edit</a>
+                            </td>
+                        </tr>    
+                   <% }) %>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>

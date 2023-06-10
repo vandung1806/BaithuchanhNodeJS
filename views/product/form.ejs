@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../head.ejs") %>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <form action="/auth/register" method="post">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">First Name</label>
+                  <input type="text" name="first name" class="form-control" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Last Name</label>
+                    <input type="text" name="last name" class="form-control" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Mobile Number</label>
+                    <input type="number" name="mobile number" class="form-control" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">User Name</label>
+                    <input type="text" name="user name" class="form-control" aria-describedby="emailHelp">
+                  </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Password</label>
+                    <input type="password" name="password" class="form-control" aria-describedby="emailHelp">
+                </div>    
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+              </form>
+        </div>
+    </section>
+</body>
+</html>

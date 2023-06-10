@@ -1,3 +1,6 @@
+// connect mongodb
+const server = process.env.DB_HOST;
+const db_name = process.env.DB_NAME;
 const mongoose = require("mongoose");
 class Database{
     constructor(){
